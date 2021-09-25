@@ -1,38 +1,143 @@
+
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Viga', sans-serif;
+  font-size: 20px;
+  color: aquamarine;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+
+.HeadStrip  {
+  /* background-color: white; */
+  min-width: 100vw;
+  padding: 0.5rem 1.5rem 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: right;
+  height: 10vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.HSContents {
+  display: flex;
+  flex-direction: row;
+  min-width: 50vw;
+  text-align: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tabs {
+  width: 15vw;
+  color: white;
+  font-size: x-large;
+  font-family: 'Viga', sans-serif;
+  text-decoration: none;
+  animation-name: slideLeft;
+  animation-duration: 0.7s 
+}
+
+@keyframes slideLeft {
+  from  {
+    transform: translateX(3.5vw);
+    opacity: 20%;
   }
-  to {
-    transform: rotate(360deg);
+
+  to  {
+    tramsform: translateX(0);
+    opacity: 100%;
   }
+}
+@keyframes slideUp {
+  from  {
+    transform: translateY(5vh);
+    opacity: 20%;
+  }
+
+  to  {
+    tramsform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+.Landing  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  animation-name: slideUp;
+  animation-duration: 0.7s;
+}
+
+.Contacts {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: slideUp;
+  animation-duration: 0.7s;
+  font-size: x-large;
+}
+
+.LogosContainer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogoContainer  {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.Skills {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: slideUp;
+  animation-duration: 0.7s;
+  font-size: x-large;
+}
+
+.SkillsContainer  {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.SkillContainer  {
+  min-width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.NameContainer  {
+  width: 50%;
+}
+
+.RatingContainer  {
+  width: 50%;
 }
